@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <div class="booble">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+    <span class="four"></span>
+    <span class="five"></span>
+  </div>
+  <div class="continer">
+    <div class="switch_box">
+      <div class="switch">
+        <i class="fas fa-moon moon"></i>
+        <i class="fas fa-sun  sun"></i>
+      </div>
+    </div>
+    <form action="#">
+      <div class="calculate">
+        <input type="text" class="screen" value="0">
+        <div class="row">
+          <span class="op clear">AC</span>
+          <span class="op">%</span>
+          <span class="op">/</span>
+        </div>
+        <div class="row">
+          <span class="nums">7</span>
+          <span class="nums">8</span>
+          <span class="nums">9</span>
+          <span class="op">*</span>
+        </div>
+        <div class="row">
+          <span class="nums">4</span>
+          <span class="nums">5</span>
+          <span class="nums">6</span>
+          <span class="op"> -</span>
+        </div>
+        <div class="row">
+          <span class="nums">1</span>
+          <span class="nums">2</span>
+          <span class="nums">4</span>
+          <span class="op">+</span>
+        </div>
+        <div class="row ">
+          <i class="nums"> <i class="fas fa-calculator" style="cursor: pointer;"></i></i>
+          <span class="nums">0</span>
+          <span class="nums">.</span>
+          <span class="op equal"></span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".continer"), {
+      max: 8,
+      speed: 200,
+      perspective: 1000
+    });
+    VanillaTilt.init(document.querySelectorAll(".continer"));
+  </script>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
