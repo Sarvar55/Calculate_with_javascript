@@ -87,7 +87,9 @@ function moon_num_color() {
 }
 
 function value_control(par, color) {
-  if (screen1.value == par) {
+  if (screen1.value == 0) {
+    screen1.style.color = color;
+  } else if (screen1.value == par) {
     screen1.style.color = color;
   }
 }
