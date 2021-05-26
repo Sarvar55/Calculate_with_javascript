@@ -1,13 +1,13 @@
-let switch_box = document.querySelector('.switch_box');
-let switch_t = document.querySelector('.switch');
-let sun = document.querySelector('.sun');
-let moon = document.querySelector('.moon');
-let span = document.getElementsByTagName('span');
-let screen1 = document.querySelector('.screen');
-let continer = document.querySelector('.continer');
-let equal = document.querySelector('.equal');
-let clear = document.querySelector('.clear');
-let nums = document.getElementsByClassName('nums');
+const switch_box = document.querySelector('.switch_box');
+const switch_t = document.querySelector('.switch');
+const sun = document.querySelector('.sun');
+const moon = document.querySelector('.moon');
+const span = document.getElementsByTagName('span');
+const screen1 = document.querySelector('.screen');
+const continer = document.querySelector('.continer');
+const equal = document.querySelector('.equal');
+const clear = document.querySelector('.clear');
+const nums = document.getElementsByClassName('nums');
 
 
 switch_box.onclick = function () {
