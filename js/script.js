@@ -65,7 +65,7 @@ function equal_function() {
   if (screen1.value == "0") {
     screen1.value = "0";
   } else {
-    var result = screen1.value = eval(screen1.value);
+    let result = screen1.value = eval(screen1.value);
   }
   return result;
 }
@@ -75,13 +75,13 @@ clear.onclick = function () {
 }
 
 function sun_num_color() {
-  for (var i = 0; i < nums.length; i++) {
+  for (let i = 0; i < nums.length; i++) {
     nums[i].style.color = "#111";
   }
 }
 
 function moon_num_color() {
-  for (var i = 0; i < nums.length; i++) {
+  for (let i = 0; i < nums.length; i++) {
     nums[i].style.color = "#fff";
   }
 }
